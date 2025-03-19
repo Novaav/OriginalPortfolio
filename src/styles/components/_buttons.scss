@@ -1,0 +1,41 @@
+.btn-contact {
+    padding: 12px 40px;  // Elegant padding
+    background: $primary; // Default background color (rich brown)
+    color: white;
+    border: 2px solid $primary; // Border matches the background
+    border-radius: 10px; // Rounded corners for a sleek look
+    font-weight: 600; // Bold for better visibility
+    text-transform: uppercase; // Uppercase for formality
+    cursor: pointer;
+    transition: all 0.4s ease; // Smooth transition for hover and active effects
+    margin-top: 20px;
+    display: inline-block;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); // Soft shadow for depth
+    text-decoration: none; // Remove underline from link
+    position: relative;  // Ensure positioning for the pseudo-element
+
+    // Default gradient with your primary and secondary colors
+    background: linear-gradient(135deg, $primary, $secondary);
+    background-size: 200% 200%; // Make the background big enough for animation
+
+    // Hover effect - Animate gradient transition
+    &:hover {
+        background-position: 100% 0; // Animate gradient when hovering
+        border-color: $secondary; // Change border to secondary color
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); // Darken the shadow on hover
+    }
+
+    // Active state - When pressed, set to primary color (solid brown)
+    &:active {
+        transform: scale(0.98); // Shrinks the button slightly on press
+        background: $primary; // Set to solid primary color when pressed
+        border-color: $primary; // Keep border the same as primary
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); // Softer shadow on active
+    }
+
+    // Focus effect - Highlight the border
+    &:focus {
+        outline: none;  /* Remove outline */
+        border-color: $gold; /* Highlight border in gold on focus */
+    }
+}

@@ -1,0 +1,24 @@
+// main.scss
+
+// Import Google Fonts
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Gill+Sans&display=swap');
+
+// Base styles
+@import './base/reset';           // Reset styles
+@import './base/typography';      // Typography styles
+@import './base/colors';          // Colors
+@import './base/mixins';          // Mixins (if you have any)
+
+// Components
+@import './components/navbar';    // Navbar component
+@import './components/buttons';   // Button styles
+
+// Layout styles
+@import './layout/about-home';    // About home section
+@import './layout/about-image';   // About image section
+@import './layout/hero';      // Hero section
+
+@import "animations/wave";
+
+@import "pages/home";
+@import "pages/about";

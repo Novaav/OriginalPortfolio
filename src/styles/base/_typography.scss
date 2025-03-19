@@ -1,0 +1,22 @@
+// Use a lighter weight for h2 to make it appear thinner
+h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+    font-weight: 700; // Bold for h1
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: #6b6b6b;
+    margin-bottom: 1rem;
+    font-weight: 300; // Lighter weight for h2 to make it appear thinner
+    letter-spacing: 0.5px; // Add a small letter-spacing to improve readability and appearance
+}
+
+p {
+    font-size: 1.8rem;
+    color: #333;
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+    font-weight: 400; // Regular weight for paragraphs
+}

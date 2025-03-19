@@ -1,0 +1,41 @@
+.btn-link {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    font-weight: 600;
+    color: $primary;
+    font-size: 1.1rem;
+    background-color: transparent;
+    transition: color 0.4s ease;
+    margin-top: 20px;
+    position: relative;
+    padding-bottom: 8px;
+    overflow: hidden;
+
+    &::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 4px;
+        background-color: $primary;
+        border-radius: 50%;
+        transform: scaleX(0);
+        transition: transform 0.3s ease;
+    }
+
+    &:hover {
+        color: $secondary;
+    }
+
+    &:hover::before {
+        transform: scaleX(1);
+    }
+
+    &:active,
+    &:focus {
+        color: $primary;
+        outline: none;
+    }
+}
